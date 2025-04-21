@@ -7,17 +7,16 @@ export const Person = ({ person }) => {
         {name}
       </div>
 
-      {age && (
-        <div className="Person__age">
-          {age}
-        </div>
-      )}
+      <div className="Person__age">
+        {age}
+      </div>
 
-    <div className="Person__partner">
-      {isMarried
-        ? `My ${sex === 'm' ? 'wife' : 'husband'} is ${partnerName}`
-        : 'I am not married'}
-      </div>;
+
+      <div className="Person__partner">
+        {isMarried
+          ? `My ${sex === 'm' ? 'wife' : 'husband'} is ${partnerName}`
+          : 'I am not married'}
+        </div>;
     </div>
 
   );
